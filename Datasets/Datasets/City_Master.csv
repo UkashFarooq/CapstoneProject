@@ -1,0 +1,532 @@
+City_Code,City_Name,State_Code
+C1,Henderson,S1
+C2,Los Angeles,S2
+C3,Fort Lauderdale,S3
+C4,Concord,S4
+C5,Seattle,S5
+C6,Fort Worth,S6
+C7,Madison,S7
+C8,West Jordan,S8
+C9,San Francisco,S2
+C10,Fremont,S9
+C11,Philadelphia,S10
+C12,Orem,S8
+C13,Houston,S6
+C14,Richardson,S6
+C15,Naperville,S11
+C16,Melbourne,S3
+C17,Eagan,S12
+C18,Westland,S13
+C19,Dover,S14
+C20,New Albany,S15
+C21,New York City,S16
+C22,Troy,S16
+C23,Chicago,S11
+C24,Gilbert,S17
+C25,Springfield,S18
+C26,Jackson,S13
+C27,Memphis,S19
+C28,Decatur,S20
+C29,Durham,S4
+C30,Columbia,S21
+C31,Rochester,S12
+C32,Minneapolis,S12
+C33,Portland,S22
+C34,Saint Paul,S12
+C35,Aurora,S23
+C36,Charlotte,S4
+C37,Orland Park,S11
+C38,Urbandale,S24
+C39,Columbus,S25
+C40,Bristol,S19
+C41,Wilmington,S14
+C42,Bloomington,S11
+C43,Phoenix,S17
+C44,Roseville,S2
+C45,Independence,S26
+C46,Pasadena,S2
+C47,Newark,S25
+C48,Franklin,S7
+C49,Scottsdale,S17
+C50,San Jose,S2
+C51,Edmond,S27
+C52,Carlsbad,S28
+C53,San Antonio,S6
+C54,Monroe,S29
+C55,Fairfield,S30
+C56,Grand Prairie,S6
+C57,Redlands,S2
+C58,Hamilton,S25
+C59,Westfield,S31
+C60,Akron,S25
+C61,Denver,S23
+C62,Dallas,S6
+C63,Whittier,S2
+C64,Saginaw,S13
+C65,Medina,S25
+C66,Dublin,S25
+C67,Detroit,S13
+C68,Tampa,S3
+C69,Santa Clara,S2
+C70,Lakeville,S12
+C71,San Diego,S2
+C72,Brentwood,S2
+C73,Chapel Hill,S4
+C74,Morristown,S31
+C75,Cincinnati,S25
+C76,Inglewood,S2
+C77,Tamarac,S3
+C78,Colorado Springs,S23
+C79,Belleville,S31
+C80,Taylor,S13
+C81,Lakewood,S31
+C82,Arlington,S18
+C83,Arvada,S23
+C84,Hackensack,S31
+C85,Saint Petersburg,S3
+C86,Long Beach,S2
+C87,Hesperia,S2
+C88,Murfreesboro,S19
+C89,Layton,S8
+C90,Austin,S6
+C91,Lowell,S32
+C92,Manchester,S30
+C93,Harlingen,S6
+C94,Tucson,S17
+C95,Quincy,S11
+C96,Pembroke Pines,S3
+C97,Des Moines,S5
+C98,Peoria,S11
+C99,Las Vegas,S34
+C100,Warwick,S35
+C101,Miami,S3
+C102,Huntington Beach,S2
+C103,Richmond,S1
+C104,Louisville,S23
+C105,Lawrence,S32
+C106,Canton,S13
+C107,New Rochelle,S16
+C108,Gastonia,S4
+C109,Jacksonville,S3
+C110,Auburn,S16
+C111,Norman,S27
+C112,Park Ridge,S11
+C113,Amarillo,S6
+C114,Lindenhurst,S16
+C115,Huntsville,S6
+C116,Fayetteville,S37
+C117,Costa Mesa,S2
+C118,Parker,S23
+C119,Atlanta,S33
+C120,Gladstone,S26
+C121,Great Falls,S38
+C122,Lakeland,S3
+C123,Montgomery,S20
+C124,Mesa,S17
+C125,Green Bay,S7
+C126,Anaheim,S2
+C127,Marysville,S5
+C128,Salem,S22
+C129,Laredo,S6
+C130,Grove City,S25
+C131,Dearborn,S13
+C132,Warner Robins,S33
+C133,Vallejo,S2
+C134,Mission Viejo,S2
+C135,Rochester Hills,S13
+C136,Plainfield,S31
+C137,Sierra Vista,S17
+C138,Vancouver,S5
+C139,Cleveland,S25
+C140,Tyler,S6
+C141,Burlington,S4
+C142,Waynesboro,S18
+C143,Chester,S10
+C144,Cary,S4
+C145,Palm Coast,S3
+C146,Mount Vernon,S16
+C147,Hialeah,S3
+C148,Oceanside,S16
+C149,Evanston,S11
+C150,Trenton,S13
+C151,Cottage Grove,S12
+C152,Bossier City,S29
+C153,Lancaster,S2
+C154,Asheville,S4
+C155,Lake Elsinore,S2
+C156,Omaha,S9
+C157,Edmonds,S5
+C158,Santa Ana,S2
+C159,Milwaukee,S7
+C160,Florence,S1
+C161,Lorain,S25
+C162,Linden,S31
+C163,Salinas,S2
+C164,New Brunswick,S31
+C165,Garland,S6
+C166,Norwich,S30
+C167,Alexandria,S18
+C168,Toledo,S25
+C169,Farmington,S28
+C170,Riverside,S2
+C171,Torrance,S2
+C172,Round Rock,S6
+C173,Boca Raton,S3
+C174,Virginia Beach,S18
+C175,Murrieta,S2
+C176,Olympia,S5
+C177,Washington,S41
+C178,Jefferson City,S26
+C179,Saint Peters,S26
+C180,Rockford,S11
+C181,Brownsville,S6
+C182,Yonkers,S16
+C183,Oakland,S2
+C184,Clinton,S40
+C185,Encinitas,S2
+C186,Roswell,S33
+C187,Jonesboro,S37
+C188,Antioch,S2
+C189,Homestead,S3
+C190,La Porte,S15
+C191,Lansing,S13
+C192,Cuyahoga Falls,S25
+C193,Reno,S34
+C194,Harrisonburg,S18
+C195,Escondido,S2
+C196,Royal Oak,S13
+C197,Rockville,S40
+C198,Coral Springs,S3
+C199,Buffalo,S16
+C200,Boynton Beach,S3
+C201,Gulfport,S36
+C202,Fresno,S2
+C203,Greenville,S4
+C204,Macon,S33
+C205,Cedar Rapids,S24
+C206,Providence,S35
+C207,Pueblo,S23
+C208,Deltona,S3
+C209,Murray,S1
+C210,Middletown,S30
+C211,Freeport,S16
+C212,Pico Rivera,S2
+C213,Provo,S8
+C214,Pleasant Grove,S8
+C215,Smyrna,S33
+C216,Parma,S25
+C217,Mobile,S20
+C218,New Bedford,S32
+C219,Irving,S6
+C220,Vineland,S31
+C221,Glendale,S17
+C222,Niagara Falls,S16
+C223,Thomasville,S4
+C224,Westminster,S2
+C225,Coppell,S6
+C226,Pomona,S2
+C227,North Las Vegas,S34
+C228,Allentown,S10
+C229,Tempe,S17
+C230,Laguna Niguel,S2
+C231,Bridgeton,S31
+C232,Everett,S32
+C233,Watertown,S16
+C234,Appleton,S7
+C235,Bellevue,S5
+C236,Allen,S6
+C237,El Paso,S6
+C238,Grapevine,S6
+C239,Carrollton,S6
+C240,Kent,S5
+C241,Lafayette,S29
+C242,Tigard,S22
+C243,Skokie,S11
+C244,Plano,S6
+C245,Suffolk,S18
+C246,Indianapolis,S15
+C247,Bayonne,S31
+C248,Greensboro,S4
+C249,Baltimore,S40
+C250,Kenosha,S7
+C251,Olathe,S42
+C252,Tulsa,S27
+C253,Redmond,S22
+C254,Raleigh,S4
+C255,Muskogee,S27
+C256,Meriden,S30
+C257,Bowling Green,S1
+C258,South Bend,S15
+C259,Spokane,S5
+C260,Keller,S6
+C261,Port Orange,S3
+C262,Medford,S22
+C263,Charlottesville,S18
+C264,Missoula,S38
+C265,Apopka,S3
+C266,Reading,S10
+C267,Broomfield,S23
+C268,Paterson,S31
+C269,Oklahoma City,S27
+C270,Chesapeake,S18
+C271,Lubbock,S6
+C272,Johnson City,S19
+C273,San Bernardino,S2
+C274,Leominster,S32
+C275,Bozeman,S38
+C276,Perth Amboy,S31
+C277,Ontario,S2
+C278,Rancho Cucamonga,S2
+C279,Moorhead,S12
+C280,Mesquite,S6
+C281,Stockton,S2
+C282,Ormond Beach,S3
+C283,Sunnyvale,S2
+C284,York,S10
+C285,College Station,S6
+C286,Saint Louis,S26
+C287,Manteca,S2
+C288,San Angelo,S6
+C289,Salt Lake City,S8
+C290,Knoxville,S19
+C291,Little Rock,S37
+C292,Lincoln Park,S13
+C293,Marion,S25
+C294,Littleton,S23
+C295,Bangor,S44
+C296,Southaven,S36
+C297,New Castle,S15
+C298,Midland,S13
+C299,Sioux Falls,S45
+C300,Fort Collins,S23
+C301,Clarksville,S19
+C302,Sacramento,S2
+C303,Thousand Oaks,S2
+C304,Malden,S32
+C305,Holyoke,S32
+C306,Albuquerque,S28
+C307,Sparks,S34
+C308,Coachella,S2
+C309,Elmhurst,S11
+C310,Passaic,S31
+C311,North Charleston,S21
+C312,Newport News,S18
+C313,Jamestown,S16
+C314,Mishawaka,S15
+C315,La Quinta,S2
+C316,Tallahassee,S3
+C317,Nashville,S19
+C318,Bellingham,S5
+C319,Woodstock,S11
+C320,Haltom City,S6
+C321,Wheeling,S11
+C322,Summerville,S21
+C323,Hot Springs,S37
+C324,Englewood,S23
+C325,Las Cruces,S28
+C326,Hoover,S20
+C327,Frisco,S6
+C328,Vacaville,S2
+C329,Waukesha,S7
+C330,Bakersfield,S2
+C331,Pompano Beach,S3
+C332,Corpus Christi,S6
+C333,Redondo Beach,S2
+C334,Orlando,S3
+C335,Orange,S31
+C336,Lake Charles,S29
+C337,Highland Park,S11
+C338,Hempstead,S16
+C339,Noblesville,S15
+C340,Apple Valley,S12
+C341,Mount Pleasant,S21
+C342,Sterling Heights,S13
+C343,Eau Claire,S7
+C344,Pharr,S6
+C345,Billings,S38
+C346,Gresham,S22
+C347,Chattanooga,S19
+C348,Meridian,S46
+C349,Bolingbrook,S11
+C350,Maple Grove,S12
+C351,Woodland,S2
+C352,Missouri City,S6
+C353,Pearland,S6
+C354,San Mateo,S2
+C355,Grand Rapids,S13
+C356,Visalia,S2
+C357,Overland Park,S42
+C358,Temecula,S2
+C359,Yucaipa,S2
+C360,Revere,S32
+C361,Conroe,S6
+C362,Tinley Park,S11
+C363,Dubuque,S24
+C364,Dearborn Heights,S13
+C365,Santa Fe,S28
+C366,Hickory,S4
+C367,Carol Stream,S11
+C368,Saint Cloud,S12
+C369,North Miami,S3
+C370,Plantation,S3
+C371,Port Saint Lucie,S3
+C372,Rock Hill,S21
+C373,Odessa,S6
+C374,West Allis,S7
+C375,Chula Vista,S2
+C376,Manhattan,S42
+C377,Altoona,S10
+C378,Thornton,S23
+C379,Champaign,S11
+C380,Texarkana,S37
+C381,Edinburg,S6
+C382,Baytown,S6
+C383,Greenwood,S15
+C384,Woonsocket,S35
+C385,Superior,S7
+C386,Bedford,S6
+C387,Covington,S5
+C388,Broken Arrow,S27
+C389,Miramar,S3
+C390,Hollywood,S3
+C391,Deer Park,S6
+C392,Wichita,S42
+C393,Mcallen,S6
+C394,Iowa City,S24
+C395,Boise,S46
+C396,Cranston,S35
+C397,Port Arthur,S6
+C398,Citrus Heights,S2
+C399,The Colony,S6
+C400,Daytona Beach,S3
+C401,Bullhead City,S17
+C402,Portage,S15
+C403,Fargo,S47
+C404,Elkhart,S15
+C405,San Gabriel,S2
+C406,Margate,S3
+C407,Sandy Springs,S33
+C408,Mentor,S25
+C409,Lawton,S27
+C410,Hampton,S18
+C411,Rome,S16
+C412,La Crosse,S7
+C413,Lewiston,S46
+C414,Hattiesburg,S36
+C415,Danville,S2
+C416,Logan,S8
+C417,Waterbury,S30
+C418,Athens,S33
+C419,Avondale,S17
+C420,Marietta,S33
+C421,Yuma,S17
+C422,Wausau,S7
+C423,Pasco,S5
+C424,Oak Park,S11
+C425,Pensacola,S3
+C426,League City,S6
+C427,Gaithersburg,S40
+C428,Lehi,S8
+C429,Tuscaloosa,S20
+C430,Moreno Valley,S2
+C431,Georgetown,S1
+C432,Loveland,S23
+C433,Chandler,S17
+C434,Helena,S38
+C435,Kirkwood,S26
+C436,Waco,S6
+C437,Frankfort,S11
+C438,Bethlehem,S10
+C439,Grand Island,S9
+C440,Woodbury,S12
+C441,Rogers,S37
+C442,Clovis,S28
+C443,Jupiter,S3
+C444,Santa Barbara,S2
+C445,Cedar Hill,S6
+C446,Norfolk,S9
+C447,Draper,S8
+C448,Ann Arbor,S13
+C449,La Mesa,S2
+C450,Pocatello,S46
+C451,Holland,S13
+C452,Milford,S30
+C453,Buffalo Grove,S11
+C454,Lake Forest,S2
+C455,Redding,S2
+C456,Chico,S2
+C457,Utica,S16
+C458,Conway,S37
+C459,Cheyenne,S48
+C460,Owensboro,S1
+C461,Caldwell,S46
+C462,Kenner,S29
+C463,Nashua,S39
+C464,Bartlett,S19
+C465,Redwood City,S2
+C466,Lebanon,S19
+C467,Santa Maria,S2
+C468,Des Plaines,S11
+C469,Longview,S5
+C470,Hendersonville,S19
+C471,Waterloo,S24
+C472,Cambridge,S32
+C473,Palatine,S11
+C474,Beverly,S32
+C475,Eugene,S22
+C476,Oxnard,S2
+C477,Renton,S5
+C478,Glenview,S11
+C479,Delray Beach,S3
+C480,Commerce City,S23
+C481,Texas City,S6
+C482,Wilson,S4
+C483,Rio Rancho,S28
+C484,Goldsboro,S4
+C485,Montebello,S2
+C486,El Cajon,S2
+C487,Beaumont,S6
+C488,West Palm Beach,S3
+C489,Abilene,S6
+C490,Normal,S11
+C491,Saint Charles,S26
+C492,Camarillo,S2
+C493,Hillsboro,S22
+C494,Burbank,S2
+C495,Modesto,S2
+C496,Garden City,S42
+C497,Atlantic City,S31
+C498,Longmont,S23
+C499,Davis,S2
+C500,Morgan Hill,S2
+C501,Clifton,S31
+C502,Sheboygan,S7
+C503,East Point,S33
+C504,Rapid City,S45
+C505,Andover,S32
+C506,Kissimmee,S3
+C507,Shelton,S30
+C508,Danbury,S30
+C509,Sanford,S3
+C510,San Marcos,S6
+C511,Greeley,S23
+C512,Mansfield,S6
+C513,Elyria,S25
+C514,Twin Falls,S46
+C515,Coral Gables,S3
+C516,Romeoville,S11
+C517,Marlborough,S32
+C518,Laurel,S40
+C519,Bryan,S6
+C520,Pine Bluff,S37
+C521,Aberdeen,S45
+C522,Hagerstown,S40
+C523,East Orange,S31
+C524,Arlington Heights,S11
+C525,Oswego,S11
+C526,Coon Rapids,S12
+C527,San Clemente,S2
+C528,San Luis Obispo,S2
+C529,Springdale,S37
+C530,Lodi,S2
+C531,Mason,S25
