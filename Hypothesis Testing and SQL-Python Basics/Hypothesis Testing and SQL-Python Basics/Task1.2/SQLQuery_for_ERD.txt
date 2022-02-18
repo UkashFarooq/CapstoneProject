@@ -1,0 +1,64 @@
+CREATE TABLE campaigndetails (
+    customer_id NUMBER(38) NOT NULL,
+    contact     VARCHAR2(26 BYTE),
+    month       VARCHAR2(26 BYTE),
+    day_of_week VARCHAR2(26 BYTE),
+    duration    NUMBER(38),
+    campaign    NUMBER(38),
+    pdays       NUMBER(38),
+    previous    NUMBER(38),
+    poutcome    VARCHAR2(26 BYTE)
+)
+
+CREATE TABLE citycode (
+    city_code  VARCHAR2(26 BYTE) NOT NULL,
+    city_name  VARCHAR2(26 BYTE),
+    state_code VARCHAR2(26 BYTE)
+)
+
+CREATE TABLE customerdetails (
+    customer_id NUMBER(38) NOT NULL,
+    age         NUMBER(38),
+    job         VARCHAR2(26 BYTE),
+    marital     VARCHAR2(26 BYTE),
+    education   VARCHAR2(26 BYTE),
+    def         VARCHAR2(26 BYTE),
+    housing     VARCHAR2(26 BYTE),
+    loan        VARCHAR2(26 BYTE),
+    region_code VARCHAR2(26 BYTE),
+    state_code  VARCHAR2(26 BYTE),
+    city_code   VARCHAR2(26 BYTE)
+)
+
+
+CREATE TABLE postalcode (
+    postalcode  NUMBER(38),
+    customer_id NUMBER(38) NOT NULL
+)
+
+CREATE TABLE region_code (
+    region_name VARCHAR2(26 BYTE),
+    region_code NUMBER(38) NOT NULL
+)
+
+
+
+CREATE TABLE responsedata (
+    customer_id NUMBER(38) NOT NULL,
+    response    VARCHAR2(26 BYTE)
+)
+
+CREATE TABLE socioeconomicdata (
+    customer_id  NUMBER(38) NOT NULL,
+    empvarrate   NUMBER(38, 1),
+    conspriceidx NUMBER(38, 3),
+    consconfidx  NUMBER(38, 1),
+    euribor3m    NUMBER(38, 3),
+    nremployed   NUMBER(38)
+)
+
+CREATE TABLE statecode (
+    state_code  VARCHAR2(26 BYTE) NOT NULL,
+    state_name  VARCHAR2(26 BYTE),
+    region_code NUMBER(38)
+)

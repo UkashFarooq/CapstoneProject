@@ -1,0 +1,6 @@
+------Relationship between Tables------
+
+The "customerdetails" has "Many to One" relationship with "citycode" , "statecode" and "regioncode" tables.
+
+
+The "responsedata" , "campaigndetails" , "socioeconomicdata" and "postalcode" tables have "One and Only One" relationship with the "customerdetails" table.

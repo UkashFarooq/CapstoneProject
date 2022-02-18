@@ -1,0 +1,137 @@
+CREATE TABLE capstone.campaigndetails (
+    customer_id NUMBER NOT NULL,
+    contact     VARCHAR2(26 BYTE),
+    month       VARCHAR2(26 BYTE),
+    day_of_week VARCHAR2(26 BYTE),
+    duration    NUMBER(38),
+    campaign    NUMBER(38),
+    pdays       NUMBER(38),
+    previous    NUMBER(38),
+    poutcome    VARCHAR2(26 BYTE)
+);
+
+
+
+CREATE TABLE capstone.citycode (
+    city_code  VARCHAR2(26 BYTE) NOT NULL,
+    city_name  VARCHAR2(26 BYTE),
+    state_code VARCHAR2(26 BYTE) NOT NULL
+);
+
+CREATE TABLE capstone.customerdetails (
+    customer_id NUMBER(38) NOT NULL,
+    age         NUMBER(38),
+    job         VARCHAR2(26 BYTE),
+    marital     VARCHAR2(26 BYTE),
+    education   VARCHAR2(26 BYTE),
+    def         VARCHAR2(26 BYTE),
+    housing     VARCHAR2(26 BYTE),
+    loan        VARCHAR2(26 BYTE),
+    region_code NUMBER(38) NOT NULL,
+    state_code  VARCHAR2(26 BYTE) NOT NULL,
+    city_code   VARCHAR2(26 BYTE) NOT NULL
+);
+
+
+
+CREATE TABLE capstone.postalcode (
+    postalcode  NUMBER(38),
+    customer_id NUMBER(38) NOT NULL
+);
+
+
+
+CREATE TABLE capstone.region_code (
+    region_name VARCHAR2(26 BYTE),
+    region_code NUMBER(38) NOT NULL
+);
+
+
+
+CREATE TABLE capstone.responsedata (
+    customer_id NUMBER(38) NOT NULL,
+    response    VARCHAR2(26 BYTE)
+);
+
+
+CREATE TABLE capstone.socioeconomicdata (
+    customer_id  NUMBER(38) NOT NULL,
+    empvarrate   NUMBER(38, 1),
+    conspriceidx NUMBER(38, 3),
+    consconfidx  NUMBER(38, 1),
+    euribor3m    NUMBER(38, 3),
+    nremployed   NUMBER(38)
+);
+
+
+CREATE TABLE capstone.statecode (
+    state_code  VARCHAR2(26 BYTE) NOT NULL,
+    state_name  VARCHAR2(26 BYTE),
+    region_code NUMBER(38) NOT NULL
+);
+
+
+
+ALTER TABLE capstone.citycode ADD CONSTRAINT citycode_pk PRIMARY KEY ( city_code );
+
+ALTER TABLE capstone.customerdetails ADD CONSTRAINT customerdetails_pk PRIMARY KEY ( customer_id );
+
+ALTER TABLE capstone.customerdetails ADD CONSTRAINT customerdetails__un UNIQUE ( customer_id );
+
+ALTER TABLE capstone.responsedata ADD CONSTRAINT responsedata__un UNIQUE ( customer_id );
+
+ALTER TABLE capstone.region_code ADD CONSTRAINT region_code_pk PRIMARY KEY ( region_code );
+
+ALTER TABLE capstone.postalcode ADD CONSTRAINT postalcode__un UNIQUE ( customer_id );
+
+ALTER TABLE capstone.socioeconomicdata ADD CONSTRAINT socioeconomicdata__un UNIQUE ( customer_id );
+
+
+ALTER TABLE capstone.campaigndetails ADD CONSTRAINT campaigndetails__un UNIQUE ( customer_id );
+
+ALTER TABLE capstone.statecode ADD CONSTRAINT statecode_pk PRIMARY KEY ( state_code );
+
+
+ALTER TABLE capstone.campaigndetails
+    ADD CONSTRAINT campaigndetails_customerdetails_fk FOREIGN KEY ( customer_id )
+        REFERENCES capstone.customerdetails ( customer_id );
+
+
+ALTER TABLE capstone.citycode
+    ADD CONSTRAINT citycode_statecode_fk FOREIGN KEY ( state_code )
+        REFERENCES capstone.statecode ( state_code );
+
+
+ALTER TABLE capstone.customerdetails
+    ADD CONSTRAINT customerdetails_citycode_fk FOREIGN KEY ( city_code )
+        REFERENCES capstone.citycode ( city_code );
+
+
+ALTER TABLE capstone.customerdetails
+    ADD CONSTRAINT customerdetails_region_code_fk FOREIGN KEY ( region_code )
+        REFERENCES capstone.region_code ( region_code );
+
+
+ALTER TABLE capstone.customerdetails
+    ADD CONSTRAINT customerdetails_statecode_fk FOREIGN KEY ( state_code )
+        REFERENCES capstone.statecode ( state_code );
+
+ALTER TABLE capstone.postalcode
+    ADD CONSTRAINT postalcode_customerdetails_fk FOREIGN KEY ( customer_id )
+        REFERENCES capstone.customerdetails ( customer_id );
+
+
+ALTER TABLE capstone.responsedata
+    ADD CONSTRAINT responsedata_customerdetails_fk FOREIGN KEY ( customer_id )
+        REFERENCES capstone.customerdetails ( customer_id );
+
+
+
+ALTER TABLE capstone.socioeconomicdata
+    ADD CONSTRAINT socioeconomicdata_customerdetails_fk FOREIGN KEY ( customer_id )
+        REFERENCES capstone.customerdetails ( customer_id );
+
+
+ALTER TABLE capstone.statecode
+    ADD CONSTRAINT statecode_region_code_fk FOREIGN KEY ( region_code )
+        REFERENCES capstone.region_code ( region_code );
