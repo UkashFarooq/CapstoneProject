@@ -1,0 +1,398 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Model</title>
+
+
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <!-- css -->
+    <link rel="stylesheet" href="static/css/styles.css">
+    
+
+
+</head>
+
+
+<body class="body bg-light";>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
+        <a class="navbar-brand" href="#">
+          <img src="https://png.pngtree.com/png-vector/20190604/ourlarge/pngtree-ai-artificial-intelligence-technology-png-image_1109042.jpg" width="30" height="30" alt="logo">
+          Gradient Boosting Classifier Deployed for bank marketing campaign.
+        </a>
+        <span class="custom-navbar-image">
+          <img src="https://png.pngtree.com/png-clipart/20190517/original/pngtree-vector-bank-icon-png-image_3762870.jpg" width="40" height="40" class="rounded-circle">
+        </span>
+      </nav>
+    
+  
+
+
+    <br><br><br>
+
+
+    <div class="container">
+
+
+
+        <form action="\predict" method="post">
+
+
+            <form class="needs-validation" novalidate>
+                
+                <div class="form-row">
+                  <div class="col-md-3">
+                    <label for="age">Age : </label>
+                    <input type="number" class="form-control" id="age" placeholder="Age of customer:"  required>
+                    <span class="help-block">Enter age of customer:</span>
+                    <div class="valid-tooltip">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="duration">Duration : </label>
+                    <input type="number" class="form-control" id="duration" placeholder="Mins contacted:"  required>
+                    <span class="help-block">Enter minutes contacted for customer:</span>
+                    <div class="valid-tooltip">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="campaign">Campaign : </label>
+                    <input type="number" class="form-control" id="campaign" placeholder="No. of contacts:"  required>
+                    <span class="help-block">Enter number of contacts performed during the campaign:</span>
+                    <div class="valid-tooltip">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="pdays">Pdays : </label>
+                    <input type="number" class="form-control" id="pdays" placeholder="No. of days passed:"  required>
+                    <span class="help-block">Enter number of days that passed by after the client was last contacted:</span>
+                    <div class="valid-tooltip">
+                      Looks good!
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <br>
+                <br>
+
+                <div class="form-row">
+                    <div class="col-md-3">
+                      <div class="card">
+                          <div class="card-body">
+                              <!-- Source -->
+                              <h5 class="card-title">Profession Type:</h5>
+                              <select name="job" id="job" required="required">
+                                  <option value="1">Admin.</option>
+                                  <option value="2">Technician.</option>
+                                  <option value="3">Blue-collar.</option>
+                                  <option value="4">Services.</option>
+                                  <option value="5">Management.</option>
+                                  <option value="6">Unemployed.</option>
+                                  <option value="7">Student.</option>
+                                  <option value="8">Self-employed.</option>
+                                  <option value="9">House-maid.</option>
+                                  <option value="10">Entrepreneur.</option>
+                              </select>
+                          </div>
+                      </div>  
+                      <div class="valid-tooltip">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card">
+                          <div class="card-body">
+                              <!-- Source -->
+                              <h5 class="card-title">Educational Background:</h5>
+                              <select name="education" id="education" required="required">
+                                  <option value="1">High School.</option>
+                                  <option value="2">Illiterate.</option>
+                                  <option value="3">Middle School.</option>
+                                  <option value="4">University Degree.</option>
+                                  <option value="5">Professional Course.</option>
+                              </select>
+                          </div>
+                      </div>  
+                      <div class="valid-tooltip">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="card">
+                          <div class="card-body">
+                              <!-- Source -->
+                              <h5 class="card-title">Marital Status:</h5>
+                              <select name="marital" id="marital" required="required">
+                                  <option value="1">Single.</option>
+                                  <option value="2">Divorced.</option>
+                                  <option value="3">Married.</option>
+                              </select>
+                          </div>
+                      </div>  
+                      <div class="valid-tooltip">
+                        Looks good!
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <!-- Source -->
+                                <h5 class="card-title">Has default in credit:</h5>
+                                <select name="default" id="default" required="required">
+                                    <option value="1">Yes.</option>
+                                    <option value="2">No.</option>
+                                    <option value="3">Unknown.</option>
+                                </select>
+                            </div>
+                        </div>  
+                        <div class="valid-tooltip">
+                          Looks good!
+                        </div>
+                    </div>
+                  </div>
+                  <br>
+                    <br>
+                    <br>
+
+                    <div class="form-row">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <!-- Source -->
+                                    <h5 class="card-title">Has housing loan:</h5>
+                                    <select name="housing" id="housing" required="required">
+                                        <option value="1">Yes.</option>
+                                        <option value="2">No.</option>
+                                    </select>
+                                </div>
+                            </div>  
+                            <div class="valid-tooltip">
+                              Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <!-- Source -->
+                                    <h5 class="card-title">Has personal loan:</h5>
+                                    <select name="loan" id="loan" required="required">
+                                        <option value="1">Yes.</option>
+                                        <option value="2">No.</option>
+                                        
+                                    </select>
+                                </div>
+                            </div>  
+                            <div class="valid-tooltip">
+                              Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <!-- Source -->
+                                    <h5 class="card-title">Contact Type:</h5>
+                                    <select name="contact" id="contact" required="required">
+                                        <option value="1">Telephone.</option>
+                                        <option value="2">Cellular.</option>
+                                    </select>
+                                </div>
+                            </div>  
+                            <div class="valid-tooltip">
+                              Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <!-- Source -->
+                                    <h5 class="card-title">Contact Month:</h5>
+                                    <select name="month" id="month" required="required">
+                                        <option value="1">March.</option>
+                                        <option value="2">April.</option>
+                                        <option value="3">May.</option>
+                                        <option value="4">June.</option>
+                                        <option value="5">July.</option>
+                                        <option value="6">August.</option>
+                                        <option value="7">September.</option>
+                                        <option value="8">October.</option>
+                                        <option value="9">November.</option>
+                                        <option value="10">December.</option>
+
+                                    </select>
+                                </div>
+                            </div>  
+                            <div class="valid-tooltip">
+                              Looks good!
+                            </div>
+                        </div>
+                      </div>
+                      <br>
+                        <br>
+                        <br>
+                    
+
+                        <div class="form-row">
+                            <div class="col-md-3">
+                              <label for="previous">Previous : </label>
+                              <input type="number" class="form-control" id="previous" placeholder="No. of contacts before this campaign:"  required>
+                              <span class="help-block">Enter number of contacts performed before this campaign and for this client :</span>
+                              <div class="valid-tooltip">
+                                Looks good!
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <label for="empvar">Emp Var Rate: </label>
+                              <input type="number" step="0.01" class="form-control" id="empvar" placeholder="Enter Emp Var Rate:"  required>
+                              <span class="help-block">Enter Employment Variation Rate :</span>
+                              <div class="valid-tooltip">
+                                Looks good!
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <label for="consprc">Consumer Price Index : </label>
+                              <input type="number" step="0.01"class="form-control" id="consprc" placeholder="Enter Consumer Price Index:"  required>
+                              <span class="help-block">Enter Consumer Price Index :</span>
+                              <div class="valid-tooltip">
+                                Looks good!
+                              </div>
+                            </div>
+                            <div class="col-md-3">
+                              <label for="consconf">Consumer Confidence Index  : </label>
+                              <input type="number" step="0.01"class="form-control" id="consconf" placeholder="Enter Consumer Confidence Index:"  required>
+                              <span class="help-block">Enter Consumer Confidence Index :</span>
+                              <div class="valid-tooltip">
+                                Looks good!
+                              </div>
+                            </div>
+                          </div>
+                          <br>
+                            <br>
+                            <br>
+
+
+                            <div class="form-row">
+                                <div class="col-md-3">
+                                  <label for="euribor">Euribor (3 month rate)  : </label>
+                                  <input type="number"step="0.01" class="form-control" id="euribor" placeholder="Enter Euribor:"  required>
+                                  <span class="help-block">Enter Euribor (3 month rate) :</span>
+                                  <div class="valid-tooltip">
+                                    Looks good!
+                                  </div>
+                                </div>
+                                <div class="col-md-3">
+                                  <label for="nremployed">Number of employees :  </label>
+                                  <input type="number" step="0.01"class="form-control" id="nremployed" placeholder="Enter Number of employees :"  required>
+                                  <span class="help-block">Enter Number of employees :</span>
+                                  <div class="valid-tooltip">
+                                    Looks good!
+                                  </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                  <div class="card">
+                                      <div class="card-body">
+                                          <!-- Source -->
+                                          <h5 class="card-title">Region :</h5>
+                                          <select name="region" id="region" required="required">
+                                              <option value="1">East.</option>
+                                              <option value="2">South.</option>
+                                              <option value="3">West.</option>
+                                              <option value="4">Central.</option>
+                                              <option value="5">Not Specified.</option>
+                                          </select>
+                                      </div>
+                                  </div>  
+                                  <div class="valid-tooltip">
+                                    Looks good!
+                                  </div>
+                                </div>
+                                <div class="col-md-3">
+                                      <div class="card">
+                                          <div class="card-body">
+                                              <!-- Source -->
+                                              <h5 class="card-title">Day Contacted :</h5>
+                                              <select name="day" id="day" required="required">
+                                                  <option value="1">Monday.</option>
+                                                  <option value="2">Tuesday.</option>
+                                                  <option value="3">Wednesday.</option>
+                                                  <option value="4">Thursday.</option>
+                                                  <option value="5">Friday.</option>
+                                                  <option value="6">Saturday.</option>
+                                              </select>
+                                          </div>
+                                      </div>  
+                                      <div class="valid-tooltip">
+                                        Looks good!
+                                      </div>
+                                    </div>
+                              </div>
+                              <br>
+                                <br>
+                                <br>
+
+
+                                <div class="form-row">
+                                    <div class="col-md-6">
+                                      <div class="card">
+                                        <div class="card border border-dark shadow-1 mb-3">
+                                        <div class="card bg-light">
+                                          <div class="card-body">
+                                              <!-- Source -->
+                                              <h5 class="card-title">Previous Outcome :</h5>
+                                              <select name="poutcome" id="poutcome" required="required">
+                                                  <option value="1">Success.</option>
+                                                  <option value="2">Failure.</option>
+                                                  <option value="3">Non-Existent.</option>
+                                              </select>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      </div>  
+                                      <div class="valid-tooltip">
+                                        Looks good!
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <br>
+                                    <br>
+                                    <br>
+                <button class="btn btn-success" type="submit">Get Prediction from data.</button>
+              </form>
+
+        
+
+
+        <h3>{{ prediction }}</h3>
+
+        <br>
+        <br>
+       
+
+    </div>
+
+    <footer class="page-footer font-small special-color-dark pt-4">
+
+    
+       
+      
+    
+        <div class="footer-copyright text-center py-3"> <p>©2021 Batch H1. (AI-Academy)</p>
+        </div>
+        
+      
+      </footer>
+      
+</body>
+
+</html>
